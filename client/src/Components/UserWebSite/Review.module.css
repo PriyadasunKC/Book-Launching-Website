@@ -1,0 +1,99 @@
+.reviewContainer {
+  width: 95vw;
+  margin: 0 auto;
+  margin-top: 5vh;
+  height: 78vh !important;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  gap: 10px;
+  padding: 25px;
+}
+
+.rewForm {
+  margin: 0 auto;
+  margin-top: 2vh;
+  width: 85vw;
+  height: 65vh !important;
+  overflow: auto !important;
+}
+
+.reviewList {
+  width: 100%;
+  padding-right: 10px;
+}
+.reviewTableMobile {
+  display: none;
+}
+
+.authorReply {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 50px;
+}
+
+.ant-empty-normal {
+  display: none;
+  overflow: auto !important;
+}
+
+.inputField {
+  width: 100%;
+}
+.authorReply {
+  display: flex;
+  flex-direction: row ;
+  gap: 10px;
+}
+
+.authorName {
+  margin-left: 10px; /* This adds space between the avatar and the name */
+  font-weight: bold; /* This makes the name bold */
+}
+@media screen and (max-width: 768px) {
+  .reviewContainer {
+    flex-direction: column;
+    width: 95vw;
+    height: 82vh !important;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    
+  }
+
+  .reviewTable {
+    display: none;
+  }
+
+  .reviewTableMobile {
+    display: block;
+    width : 100vw !important;
+    height : 60vh !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 0 !important;
+  }
+
+   .reviewTableMobile .authorReply {
+      margin-top: 20px;
+      margin-bottom: 0px;
+      margin-left: 0px !important;
+  }
+
+  .reviewTableMobile .avatar {
+    display: none;
+  }
+
+  .reviewTableMobile .inputField {
+    margin-left : auto;
+    margin-right: auto;
+  }
+
+.reviewTableMobile .replyItem {
+  width : 70vw !important;
+}
+
+.description {
+  width: 65vw !important;
+}
+
+
+}
